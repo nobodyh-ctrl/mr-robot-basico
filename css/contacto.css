@@ -196,4 +196,22 @@
   .form-container {
     padding: var(--spacing-md);
   }
+
+  .coordinate-display {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xs);
+  }
+
+  .hacker-map {
+    height: 300px;
+  }
+
+  .map-header h3 {
+    font-size: 0.9rem;
+    word-break: break-word;
+  }
+
+  .form-container h2 {
+    font-size: 1.5rem;
+  }
 }
