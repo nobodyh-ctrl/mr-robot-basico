@@ -188,13 +188,23 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .contact-section {
+    padding: var(--spacing-md) 0;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
   }
 
+  .contact-map-section {
+    padding: var(--spacing-sm);
+    overflow: hidden;
+  }
+
   .form-container {
     padding: var(--spacing-md);
+    overflow: hidden;
   }
 
   .coordinate-display {
@@ -204,6 +214,7 @@
 
   .hacker-map {
     height: 300px;
+    max-width: 100%;
   }
 
   .map-header h3 {
@@ -213,5 +224,16 @@
 
   .form-container h2 {
     font-size: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+
+  .submit-btn {
+    font-size: 0.9rem;
+    padding: var(--spacing-sm);
   }
 }
