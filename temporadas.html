@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Robot - Temporadas</title>
+    <link rel="icon" type="image/jpeg" href="img/gallery2.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Mr. Robot Logo" class="logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="temporadas.html" class="nav-link active">Temporadas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="galeria.html" class="nav-link">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="glitch-text" data-text="TEMPORADAS">TEMPORADAS</h1>
+                <p class="terminal-prompt">root@fsociety:~# ls -la seasons/</p>
+            </div>
+        </div>
+
+        <div class="seasons-section">
+            <div class="container">
+                <div class="seasons-grid">
+                    <!-- Temporada 1 -->
+                    <div class="season-card">
+                        <div class="season-header">
+                            <div class="season-number">01</div>
+                            <div class="season-title-block">
+                                <h3>Temporada 1</h3>
+                                <p class="season-year">2015 • 10 episodios • <span class="status-badge">Piloto</span></p>
+                            </div>
+                        </div>
+                        <div class="season-image">
+                            <img src="img/season1.jpg" alt="Temporada 1">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="season-info">
+                            <p class="season-summary"><strong>Elliot Alderson</strong>, un ingeniero de ciberseguridad con trastornos mentales, es reclutado por <strong>Mr. Robot</strong> y el grupo hacktivista <strong>fsociety</strong> para ejecutar el hack más grande de la historia: derrocar a <strong>Evil Corp</strong>, la corporación que controla el mundo.</p>
+                            <button class="episodes-toggle" onclick="toggleEpisodes(1)">
+                                <span class="terminal-prompt">root@episodes:~$</span> Ver Episodios
+                                <span class="toggle-icon">▼</span>
+                            </button>
+                            <div class="episodes-list" id="episodes-1">
+                                <div class="episode-item">
+                                    <span class="ep-num">1x01</span>
+                                    <span class="ep-title">eps1.0_hellofriend.mov</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">1x02</span>
+                                    <span class="ep-title">eps1.1_ones-and-zer0es.mpeg</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">1x03</span>
+                                    <span class="ep-title">eps1.2_d3bug.mkv</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">1x04</span>
+                                    <span class="ep-title">eps1.3_da3m0ns.mp4</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">1x05</span>
+                                    <span class="ep-title">eps1.4_3xpl0its.wmv</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">1x06</span>
+                                    <span class="ep-title">eps1.5_br4ve-trave1er.asf</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">1x07</span>
+                                    <span class="ep-title">eps1.6_v1ew-s0urce.flv</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">1x08</span>
+                                    <span class="ep-title">eps1.7_wh1ter0se.m4v</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">1x09</span>
+                                    <span class="ep-title">eps1.8_m1rr0r1ng.qt</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">1x10</span>
+                                    <span class="ep-title">eps1.9_zer0-day.avi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Temporada 2 -->
+                    <div class="season-card">
+                        <div class="season-header">
+                            <div class="season-number">02</div>
+                            <div class="season-title-block">
+                                <h3>Temporada 2</h3>
+                                <p class="season-year">2016 • 12 episodios • <span class="status-badge">Consecuencias</span></p>
+                            </div>
+                        </div>
+                        <div class="season-image">
+                            <img src="img/season2.jpg" alt="Temporada 2">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="season-info">
+                            <p class="season-summary">Después del hack del <strong>5/9</strong>, el mundo cae en el caos económico. Elliot lucha con su <strong>identidad fragmentada</strong> mientras intenta deshacer el daño. La conspiración se profundiza y las líneas entre realidad y alucinación se desdibujan.</p>
+                            <button class="episodes-toggle" onclick="toggleEpisodes(2)">
+                                <span class="terminal-prompt">root@episodes:~$</span> Ver Episodios
+                                <span class="toggle-icon">▼</span>
+                            </button>
+                            <div class="episodes-list" id="episodes-2">
+                                <div class="episode-item">
+                                    <span class="ep-num">2x01</span>
+                                    <span class="ep-title">eps2.0_unm4sk-pt1.tc</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">2x02</span>
+                                    <span class="ep-title">eps2.0_unm4sk-pt2.tc</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">2x03</span>
+                                    <span class="ep-title">eps2.1_k3rnel-pan1c.ksd</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">2x04</span>
+                                    <span class="ep-title">eps2.2_init_1.asec</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">2x05</span>
+                                    <span class="ep-title">eps2.3_logic-b0mb.hc</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">2x06</span>
+                                    <span class="ep-title">eps2.4_m4ster-s1ave.aes</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">2x07</span>
+                                    <span class="ep-title">eps2.5_h4ndshake.sme</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">2x08</span>
+                                    <span class="ep-title">eps2.6_succ3ss0r.p12</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">2x09</span>
+                                    <span class="ep-title">eps2.7_init_5.fve</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">2x10</span>
+                                    <span class="ep-title">eps2.8_h1dden-pr0cess.axx</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">2x11</span>
+                                    <span class="ep-title">eps2.9_pyth0n-pt1.p7z</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">2x12</span>
+                                    <span class="ep-title">eps2.9_pyth0n-pt2.p7z</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Temporada 3 -->
+                    <div class="season-card">
+                        <div class="season-header">
+                            <div class="season-number">03</div>
+                            <div class="season-title-block">
+                                <h3>Temporada 3</h3>
+                                <p class="season-year">2017 • 10 episodios • <span class="status-badge">Guerra</span></p>
+                            </div>
+                        </div>
+                        <div class="season-image">
+                            <img src="img/season3.jpg" alt="Temporada 3">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="season-info">
+                            <p class="season-summary">La guerra cibernética alcanza su punto máximo. <strong>Elliot</strong> y <strong>Mr. Robot</strong> trabajan juntos para detener el <strong>Stage 2</strong>. <strong>Whiterose</strong> y la <strong>Dark Army</strong> revelan su verdadero poder. El tiempo corre y las consecuencias son letales.</p>
+                            <button class="episodes-toggle" onclick="toggleEpisodes(3)">
+                                <span class="terminal-prompt">root@episodes:~$</span> Ver Episodios
+                                <span class="toggle-icon">▼</span>
+                            </button>
+                            <div class="episodes-list" id="episodes-3">
+                                <div class="episode-item">
+                                    <span class="ep-num">3x01</span>
+                                    <span class="ep-title">eps3.0_power-saver-mode.h</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">3x02</span>
+                                    <span class="ep-title">eps3.1_undo.gz</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">3x03</span>
+                                    <span class="ep-title">eps3.2_legacy.so</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">3x04</span>
+                                    <span class="ep-title">eps3.3_metadata.par2</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">3x05</span>
+                                    <span class="ep-title">eps3.4_runtime-err0r.r00</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">3x06</span>
+                                    <span class="ep-title">eps3.5_kill-pr0cess.inc</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">3x07</span>
+                                    <span class="ep-title">eps3.6_fredrick+tanya.chk</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">3x08</span>
+                                    <span class="ep-title">eps3.7_dont-delete-me.ko</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">3x09</span>
+                                    <span class="ep-title">eps3.8_stage3.torrent</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">3x10</span>
+                                    <span class="ep-title">shutdown -r</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Temporada 4 -->
+                    <div class="season-card">
+                        <div class="season-header">
+                            <div class="season-number">04</div>
+                            <div class="season-title-block">
+                                <h3>Temporada 4</h3>
+                                <p class="season-year">2019 • 13 episodios • <span class="status-badge finale">Final</span></p>
+                            </div>
+                        </div>
+                        <div class="season-image">
+                            <img src="img/season4.jpg" alt="Temporada 4">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="season-info">
+                            <p class="season-summary">La temporada final. <strong>Elliot</strong> descubre la verdad sobre su pasado, su identidad y el <strong>proyecto de Whiterose</strong>. Todos los misterios se revelan en una conclusión épica que redefine toda la serie. <strong>¿Quién es realmente Elliot Alderson?</strong></p>
+                            <button class="episodes-toggle" onclick="toggleEpisodes(4)">
+                                <span class="terminal-prompt">root@episodes:~$</span> Ver Episodios
+                                <span class="toggle-icon">▼</span>
+                            </button>
+                            <div class="episodes-list" id="episodes-4">
+                                <div class="episode-item">
+                                    <span class="ep-num">4x01</span>
+                                    <span class="ep-title">401 Unauthorized</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">4x02</span>
+                                    <span class="ep-title">402 Payment Required</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">4x03</span>
+                                    <span class="ep-title">403 Forbidden</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">4x04</span>
+                                    <span class="ep-title">404 Not Found</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">4x05</span>
+                                    <span class="ep-title">405 Method Not Allowed</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">4x06</span>
+                                    <span class="ep-title">406 Not Acceptable</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">4x07</span>
+                                    <span class="ep-title">407 Proxy Authentication Required</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">4x08</span>
+                                    <span class="ep-title">408 Request Timeout</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">4x09</span>
+                                    <span class="ep-title">409 Conflict</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">4x10</span>
+                                    <span class="ep-title">410 Gone</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">4x11</span>
+                                    <span class="ep-title">411 Length Required</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">4x12</span>
+                                    <span class="ep-title">412 Precondition Failed</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="ep-num">4x13</span>
+                                    <span class="ep-title">413 Payload Too Large (Series Finale)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Legales</h3>
+                    <ul>
+                        <li><a href="#">Términos de Uso</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Derechos de Autor</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/whoismrrobot/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/WhoIsMrRobot/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@USANETWORK" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/whoismrrobot" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X (Twitter)">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mr. Robot Fan Site. Todos los derechos reservados. | <span class="terminal-text">Connection established...</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
