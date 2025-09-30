@@ -1,0 +1,298 @@
+/* Estilos específicos para temporadas.html */
+
+/* Sección de temporadas */
+.seasons-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.seasons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .seasons-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.season-card {
+  background-color: var(--secondary-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.season-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--primary-red), var(--danger-red), var(--primary-red));
+  border-radius: 10px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.season-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary-red);
+  box-shadow: 0 15px 40px rgba(229, 9, 20, 0.4), 0 0 20px rgba(229, 9, 20, 0.2);
+}
+
+.season-card:hover::before {
+  opacity: 0.3;
+}
+
+.season-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: linear-gradient(135deg, var(--accent-bg) 0%, var(--secondary-bg) 100%);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.season-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-red);
+  font-family: var(--font-mono);
+  line-height: 1;
+  text-shadow: 0 0 10px rgba(229, 9, 20, 0.5);
+}
+
+.season-title-block h3 {
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+}
+
+.season-year {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background-color: var(--primary-red);
+  color: var(--text-primary);
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.finale {
+  background-color: #ff0000;
+  animation: pulse 2s infinite;
+}
+
+.season-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.season-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(229, 9, 20, 0.1) 50%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  pointer-events: none;
+}
+
+.season-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+  filter: grayscale(0.3) brightness(0.9);
+}
+
+.season-card:hover .season-image img {
+  transform: scale(1.05);
+  filter: grayscale(0.3) brightness(0.9);
+}
+
+.season-info {
+  padding: var(--spacing-md);
+}
+
+.season-summary {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.season-stats {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-sm);
+  background-color: var(--accent-bg);
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.season-stats strong {
+  color: var(--primary-red);
+}
+
+.episodes-toggle {
+  width: 100%;
+  background: linear-gradient(135deg, var(--accent-bg) 0%, var(--secondary-bg) 100%);
+  border: 1px solid var(--primary-red);
+  color: var(--text-primary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.2);
+}
+
+.episodes-toggle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(229, 9, 20, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.episodes-toggle:hover::before {
+  left: 100%;
+}
+
+.episodes-toggle:hover {
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--secondary-red) 100%);
+  border-color: var(--danger-red);
+  transform: translateX(5px);
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.5);
+}
+
+.episodes-toggle.active {
+  background-color: var(--primary-bg);
+  border-color: var(--danger-red);
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.4), inset 0 0 10px rgba(229, 9, 20, 0.1);
+}
+
+.toggle-icon {
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+  color: var(--primary-red);
+}
+
+.episodes-toggle.active .toggle-icon {
+  transform: rotate(180deg);
+  color: var(--danger-red);
+}
+
+.episodes-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, opacity 0.3s ease;
+  margin-top: var(--spacing-sm);
+  opacity: 0;
+  background: linear-gradient(180deg, rgba(229, 9, 20, 0.03) 0%, transparent 100%);
+  border-radius: 5px;
+}
+
+.episodes-list.active {
+  max-height: 600px;
+  opacity: 1;
+  padding: var(--spacing-xs) 0;
+}
+
+.episode-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: rgba(26, 26, 26, 0.5);
+  border-left: 3px solid var(--border-color);
+  margin-bottom: 0.4rem;
+  transition: all 0.2s ease;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  position: relative;
+  backdrop-filter: blur(5px);
+}
+
+.episode-item::before {
+  content: '>';
+  color: var(--primary-red);
+  opacity: 0;
+  margin-right: -10px;
+  transition: all 0.2s ease;
+}
+
+.episode-item:hover::before {
+  opacity: 1;
+  margin-right: 0;
+}
+
+.episode-item:hover {
+  border-left-color: var(--danger-red);
+  background-color: rgba(229, 9, 20, 0.1);
+  transform: translateX(8px);
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.2);
+}
+
+.ep-num {
+  color: var(--primary-red);
+  font-weight: 700;
+  min-width: 45px;
+  text-shadow: 0 0 5px rgba(229, 9, 20, 0.5);
+  background-color: rgba(229, 9, 20, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+}
+
+.ep-title {
+  color: var(--text-secondary);
+  flex: 1;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.episode-item:hover .ep-title {
+  color: var(--text-primary);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 5px var(--primary-red);
+  }
+  50% {
+    opacity: 0.5;
+    box-shadow: 0 0 15px var(--primary-red);
+  }
+}

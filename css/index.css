@@ -1,0 +1,98 @@
+/* Estilos específicos para index.html */
+
+/* Sección hero */
+.hero-section {
+  padding: var(--spacing-xl) 0;
+  background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary-bg) 100%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.hero-text h1 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.intro-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  background-color: rgba(42, 42, 42, 0.3);
+  padding: var(--spacing-md);
+  border-left: 3px solid var(--primary-red);
+  border-radius: 0 5px 5px 0;
+}
+
+.terminal-prompt {
+  color: var(--primary-red);
+  font-weight: 700;
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+.terminal-text {
+  color: var(--primary-red);
+  font-family: var(--font-mono);
+}
+
+/* Imagen hero */
+.hero-image {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid var(--border-color);
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  max-height: 800px;
+  object-fit: cover;
+  display: block;
+  transition: var(--transition-normal);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(229, 9, 20, 0.1) 0%, transparent 50%, rgba(255, 0, 0, 0.1) 100%);
+  opacity: 0;
+  transition: var(--transition-normal);
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-container:hover .main-image {
+  transform: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .intro-text {
+    font-size: 0.9rem;
+  }
+}
